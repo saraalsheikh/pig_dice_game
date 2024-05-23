@@ -76,3 +76,14 @@ class Game:
             else:
                 print("Invalid decision, please choose 'roll', 'hold' or 'cheat'")
         self.switch_player()
+    
+    def check_winner(self):
+        """
+        Checks if any player has won the game.
+        """
+        for player in self.players:
+            if player.get_score() >= 100:
+                print(f"{player.get_name()} wins with a score of {player.get_score()}!")
+                self.highscore.update_score(player.get_name(), player.get_score())
+                return True
+        return False
