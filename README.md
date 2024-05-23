@@ -13,13 +13,13 @@ Python3 installed
 Clone the repository to your local machine:
 git clone https://github.com/fetyan78/pig-dice-game.git
 
-## Go into project:
+### Go into project:
 cd pig_dice_game
 
-## Install dependencies:
+### Install dependencies:
 Make install
 
-## Run main file:
+### Run main file:
 main.py
 
 ## 🎲Rules
