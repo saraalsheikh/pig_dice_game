@@ -15,3 +15,10 @@ def set_name(self, name):
         Sets the player's name.
         """
         self.name = name
+
+def add_score(self, points):
+        """
+        Adds points to the player's score.
+        """
+        self.score += points
+
