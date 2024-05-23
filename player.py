@@ -22,3 +22,16 @@ def add_score(self, points):
         """
         self.score += points
 
+def reset_score(self):
+        """
+        Resets the player's score to zero.
+        """
+        self.score = 0
+
+def get_name(self):
+        """
+        Returns the player's name.
+        """
+        return self.name
+
+
