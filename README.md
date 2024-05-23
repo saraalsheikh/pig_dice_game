@@ -38,4 +38,4 @@ Name: Sara Al Shaikh Mail: sara.al_shaikh0176@stud.hkr.se Github: https://github
 
 Name: Sondos Faghiyazdin Mail: sondos.faghiyazdin0024@stud.hkr.se Github: https://github.com/99sondos
 
-Name: Ali Daoud Mail: Ali.daud005 Github: https://github.com/fetyan78
+Name: Ali Daoud Mail: Ali.daud0056@stud.hkr.se Github: https://github.com/fetyan78
