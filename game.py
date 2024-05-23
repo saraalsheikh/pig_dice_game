@@ -87,3 +87,19 @@ class Game:
                 self.highscore.update_score(player.get_name(), player.get_score())
                 return True
         return False
+    
+    def show_rules(self):
+        """
+        Displays the game rules.
+        """
+        print("""\n
+            Rules for Two-Pig Dice:
+
+            1. The game is played with two dice.
+            2. Players take turns to roll the dice as many times as they like.
+            3. The goal is to reach 100 points.
+            4. On a turn, a player can roll the dice repeatedly to accumulate points.
+            5. If a player rolls a single '1', their turn ends and no points are added.
+            6. If a player rolls two '1's, their entire score is reset to zero.
+            7. A player can choose to 'pass' to end their turn and keep the points accumulated in that turn.
+            8. The first player to reach 100 points wins the game.\n""")
