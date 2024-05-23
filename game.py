@@ -43,3 +43,36 @@ class Game:
         Returns the current player.
         """
         return self.players[self.current_player_index]
+    
+    def play_round(self):
+        """
+        Plays a round for the current player.
+        """
+        player = self.get_current_player()
+        print(f"{player.get_name()}'s turn")
+        while True:
+            if player.get_name() == 'Computer':
+                decision = self.intelligence.make_decision(player.get_score())
+                print(f"Computer decides to {decision}")
+            else:
+                decision = input("Do you want to 'roll', 'hold', or 'cheat'? ")
+
+            if decision == 'cheat':
+                if self.cheat_to_win():
+                    return  # End the round immediately if cheat is used
+            elif decision == 'roll':
+                roll = self.dice_hand.roll_all()
+                print(f"Rolled: {roll}")
+                if 1 in roll:
+                    player.reset_score()
+                    print(f"{player.get_name()} rolled one 1 and lost all points!")
+                    break
+                else:
+                    player.add_score(sum(roll))
+                    print(f"{player.get_name()}'s score: {player.get_score()}")
+            elif decision == 'hold':
+                print(f"{player.get_name()} holds with score: {player.get_score()}")
+                break
+            else:
+                print("Invalid decision, please choose 'roll', 'hold' or 'cheat'")
+        self.switch_player()
