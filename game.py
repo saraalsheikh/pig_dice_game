@@ -113,4 +113,12 @@ class Game:
         for player, data in scores.items():
             print(f"{player}: {data['games_played']} games, {data['total_score']} points")
 
-    
+    def cheat_to_win(self):
+        """
+        Allows the current player to cheat and win the game.
+        """
+        player = self.get_current_player()
+        player.add_score(100)
+        print(f"{player.get_name()} har fuskat och vinner med en poäng på 100!")
+        self.highscore.update_score(player.get_name(), player.get_score())
+        return True
