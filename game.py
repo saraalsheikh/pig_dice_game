@@ -24,3 +24,10 @@ class Game:
         Adds a new player to the game.
         """
         self.players.append(Player(name))
+
+    def set_computer_player(self, level):
+        """
+        Sets up a computer player with a specified intelligence level.
+        """
+        self.intelligence = Intelligence(level)
+        self.add_player('Computer')
