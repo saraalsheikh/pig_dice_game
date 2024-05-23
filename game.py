@@ -18,4 +18,9 @@ class Game:
         self.highscore = HighScore()
         self.intelligence = None
         self.current_player_index = 0
-        
+    
+    def add_player(self, name):
+        """
+        Adds a new player to the game.
+        """
+        self.players.append(Player(name))
