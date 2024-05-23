@@ -10,3 +10,8 @@ def __init__(self, name):
         self.name = name
         self.score = 0
 
+def set_name(self, name):
+        """
+        Sets the player's name.
+        """
+        self.name = name
