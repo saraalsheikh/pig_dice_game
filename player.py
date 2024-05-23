@@ -35,3 +35,8 @@ def get_name(self):
         return self.name
 
 
+def get_score(self):
+        """
+        Returns the player's score.
+        """
+        return self.score
