@@ -15,3 +15,6 @@ class TestDiceHand(unittest.TestCase):
         self.assertEqual(len(result), 2)
         for roll in result:
             self.assertTrue(1 <= roll <= 6)
+
+if __name__ == '__main__':
+    unittest.main()
