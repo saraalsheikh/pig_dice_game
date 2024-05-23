@@ -31,9 +31,15 @@ class Game:
         """
         self.intelligence = Intelligence(level)
         self.add_player('Computer')
-        
+
     def switch_player(self):
         """
         Switches to the next player.
         """
         self.current_player_index = (self.current_player_index + 1) % len(self.players)
+    
+    def get_current_player(self):
+        """
+        Returns the current player.
+        """
+        return self.players[self.current_player_index]
