@@ -7,6 +7,13 @@ from src.intelligence import Intelligence
 class Game:
     """
     Represents the game logic and state.
+    
+    Attributes:
+        players (list): A list of players participating in the game.
+        dice_hand (DiceHand): An instance of DiceHand representing the dice used in the game.
+        highscore (HighScore): An instance of HighScore tracking the game's high scores.
+        intelligence (Intelligence): An instance of Intelligence representing computer player's intelligence level.
+        current_player_index (int): Index of the current player in the players list.
     """
 
     def __init__(self):
@@ -22,12 +29,18 @@ class Game:
     def add_player(self, name):
         """
         Adds a new player to the game.
+
+        Args:
+            name (str): The name of the player.
         """
         self.players.append(Player(name))
 
     def set_computer_player(self, level):
         """
         Sets up a computer player with a specified intelligence level.
+
+        Args:
+            level (str): The intelligence level of the computer player.
         """
         self.intelligence = Intelligence(level)
         self.add_player('Computer')
@@ -41,6 +54,9 @@ class Game:
     def get_current_player(self):
         """
         Returns the current player.
+
+        Returns:
+            Player: The current player.
         """
         return self.players[self.current_player_index]
     
@@ -80,6 +96,9 @@ class Game:
     def check_winner(self):
         """
         Checks if any player has won the game.
+
+        Returns:
+            bool: True if a player has won, False otherwise.
         """
         for player in self.players:
             if player.get_score() >= 100:
@@ -116,6 +135,9 @@ class Game:
     def cheat_to_win(self):
         """
         Allows the current player to cheat and win the game.
+
+        Returns:
+            bool: True if the cheat action was successful, False otherwise.
         """
         player = self.get_current_player()
         player.add_score(100)
