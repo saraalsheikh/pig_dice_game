@@ -8,3 +8,14 @@ class Game:
     """
     Represents the game logic and state.
     """
+
+    def __init__(self):
+        """
+        Initializes the game with default values.
+        """
+        self.players = []
+        self.dice_hand = DiceHand()
+        self.highscore = HighScore()
+        self.intelligence = None
+        self.current_player_index = 0
+        
