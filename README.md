@@ -1,11 +1,10 @@
 # pig_dice_game
 
-#pig-dice-game
 
-##Description
+## Description
 This Python script presents a text-based rendition of the Pig Dice Game. In this game, participants alternate turns rolling a die, aiming to accumulate points until they reach a predetermined target score.
 
-##Features
+## Features
 Play against a computer opponent (COPlayer) with various difficulty levels in single-player mode. Multiplayer mode enabling two human players to engage in head-to-head matches. Streamlined and user-friendly interface accessible via the command line. Ability to customize player names and access the leaderboard for high scores.
 
 Installation
