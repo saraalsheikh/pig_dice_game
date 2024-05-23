@@ -103,3 +103,14 @@ class Game:
             6. If a player rolls two '1's, their entire score is reset to zero.
             7. A player can choose to 'pass' to end their turn and keep the points accumulated in that turn.
             8. The first player to reach 100 points wins the game.\n""")
+        
+    
+    def show_high_scores(self):
+        """
+        Displays the high scores.
+        """
+        scores = self.highscore.get_scores()
+        for player, data in scores.items():
+            print(f"{player}: {data['games_played']} games, {data['total_score']} points")
+
+    
