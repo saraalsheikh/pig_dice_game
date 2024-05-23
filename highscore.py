@@ -22,3 +22,27 @@ def load_scores(self):
             with open(self.filename, 'r') as file:
                 return json.load(file)
         return {}
+
+def save_scores(self):
+        """
+        Saves scores to a file.
+        """
+        with open(self.filename, 'w') as file:
+            json.dump(self.scores, file)
+
+def update_score(self, player_name, score):
+        """
+        Updates the score for a player.
+        """
+        if player_name in self.scores:
+            self.scores[player_name]['games_played'] += 1
+            self.scores[player_name]['total_score'] += score
+        else:
+            self.scores[player_name] = {'games_played': 1, 'total_score': score}
+        self.save_scores()
+
+def get_scores(self):
+        """
+        Returns all stored scores.
+        """
+        return self.scores
