@@ -27,12 +27,6 @@ On each turn, a player continues rolling a die until they roll a 1 or decide to 
 
 If a player rolls a 1, they earn no points, and it's the next player's turn. If the player rolls any other number, that number is added to their current turn's total, and their turn continues. If a player opts to "hold," their turn total is added to their overall score, and it's the next player's turn. The game concludes when a player reaches a score of 100 or more, making them the winner.
 
-## 💾File structure &
-to be added
-Klasser: förklaring
-
-ex. -main --folder -- folder
-
 ## 📧Collaborators & Contact info
 Name: Sara Al Shaikh Mail: sara.al_shaikh0176@stud.hkr.se Github: https://github.com/saraalsheikh
 
