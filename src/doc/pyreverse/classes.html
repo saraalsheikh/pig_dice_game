@@ -1,0 +1,42 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class Dice {
+            faces : int
+            roll()
+          }
+          class DiceHand {
+            dice
+            roll_all()
+          }
+          class Game {
+            current_player_index : int
+            dice_hand
+            highscore
+            intelligence : NoneType
+            players : list
+            add_player(name)
+            cheat_to_win()
+            check_winner()
+            get_current_player()
+            play_round()
+            set_computer_player(level)
+            show_high_scores()
+            show_rules()
+            switch_player()
+          }
+          class HighScore {
+          }
+          class Intelligence {
+            level : str
+            make_decision(current_score)
+          }
+          class Player {
+          }
+  
+       </div>
+  </body>
+</html>
