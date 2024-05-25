@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Code analysis
+=======
+Code analysis
+>>>>>>> 38e60a1601eee57ac6d2a73b93e7f261e0fd7d23
 bandit
 flake8
 flake8-docstrings
@@ -8,6 +12,7 @@ flake8-polyfill
 pylint
 radon
 
+<<<<<<< HEAD
 # Code style
 black
 
@@ -17,4 +22,11 @@ sphinx
 sphinx-rtd-theme # for ReadTheDocs local build
 
 # Unit test and coverage
+=======
+Documentation
+pdoc3
+sphinx
+
+Unit test and coverage
+>>>>>>> 38e60a1601eee57ac6d2a73b93e7f261e0fd7d23
 coverage
