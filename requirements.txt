@@ -1,0 +1,16 @@
+Code analysis
+bandit
+flake8
+flake8-docstrings
+flake8-polyfill
+#cohesion
+#metrics.pylint
+pylint
+radon
+
+Documentation
+pdoc3
+sphinx
+
+Unit test and coverage
+coverage
